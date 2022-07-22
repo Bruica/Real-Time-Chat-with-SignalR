@@ -1,0 +1,29 @@
+﻿@page
+    <div class="container">
+        <div class="row">Demonstrates Real Time Message Transfer Between Clients</div>
+        <div class="row">&nbsp;</div>
+        <div class="row">
+            <div class="col-4">Name: <input type="text" id="userInput" /></div>
+        </div>
+    <div class="row">
+        <div class="col-12">
+            <hr />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-9 messages">
+            <ul id="messagesList"></ul>
+            <div class="row">- Welcome to Robert's Chat -</div>
+        </div>
+    </div>
+    <div class="row">&nbsp;</div>
+    <div class="row">
+            <div class="col-1">Message</div>
+            <div class="col-6"><input type="text" id="messageInput" /></div>
+            <div class="col-2">
+                <input type="button" id="sendButton" value="Send Message" />
+            </div>
+        </div>
+    </div>
+<script src="~/js/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/chat.js"></script>
